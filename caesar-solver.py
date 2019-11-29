@@ -1,6 +1,4 @@
-
-
-input = """
+code = """
 10111 01011 01000 00000 10101 01000 10110 11000 01111 10111 00000 01100
 10110 00000 10111 01011 01000 00000 10110 11000 10000 00000 10010 01001
 00000 10111 01011 10101 01000 01000 00000 10001 11000 10000 00101 01000
@@ -28,10 +26,8 @@ input = """
 
 ab = ' xyzabcdefghijklmnopqrstuvw'
 
-output = [ int(i, 2) for i in input.split() ]
+output = [int(i, 2) for i in code.split()]
 
-output = [ ab[i] for i in output ]
+output = [ab[i] for i in output]
 
 print(''.join(output))
-
-
